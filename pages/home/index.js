@@ -26,7 +26,7 @@ export default function Home (){
 
      
      </div>
-     <div><Link href='/kfc'><Image src={'/home/CardKfc.svg'} width={0} height={0} className={css.card}/></Link></div>
+     <div><Link href='/kfc'><Image src={'/home/CardKFC.svg'} width={0} height={0} className={css.card}/></Link></div>
      <Image src={'/home/Footer.svg'}
      width={0}
      height={0}

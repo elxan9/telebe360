@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import css from './login.module.css'; 
 import { FaEye, FaEyeSlash, FaKey } from 'react-icons/fa';
