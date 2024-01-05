@@ -14,7 +14,10 @@ export default function BeforeLogin() {
               
             }
       `}</style>
-      
+         <Head>
+        <title>Tələbə360°-a daxil olun</title>
+        <link rel="icon" href="/home/360minilogo.svg" />
+      </Head>
   <section className={css.section1 }>
    
       <div className={css.container}>
