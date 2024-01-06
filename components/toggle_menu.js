@@ -114,7 +114,7 @@ const ToggleMenu = () => {
       />
     
       </li></Link>
-      <Link href='/'> <li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
+      <Link className={css.links} href='/'> <li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/crown.svg'}
          width={0}
          height={0}
@@ -123,7 +123,7 @@ const ToggleMenu = () => {
       <p className={css.plus360text}>Tələbə360+</p>
       </li></Link>
 
-      <Link href='/offers'>
+      <Link className={css.links} href='/offers'>
         <li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/offers.svg'}
          width={0}
@@ -132,7 +132,7 @@ const ToggleMenu = () => {
       />
       <p className={css.alloffers}>  All offers</p>
       </li></Link>
-      <Link className={css.links} href='/categories/fashion'><li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
+      <Link className={css.links}  href='/categories/fashion'><li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/Fashion.svg'}
          width={0}
          height={0}
@@ -140,7 +140,7 @@ const ToggleMenu = () => {
       />
       <p className={css.alloffers}>Fashion</p>
       </li></Link>
-      <Link href='/categories/food'>
+      <Link className={css.links} href='/categories/food'>
       <li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/Food.svg'}
          width={0}
@@ -150,7 +150,7 @@ const ToggleMenu = () => {
       <p className={css.alloffers}>Food</p>
       </li></Link>
 
-      <Link href='/categories/technology'>
+      <Link className={css.links} href='/categories/technology'>
       <li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/Technology.svg'}
          width={0}
@@ -170,7 +170,7 @@ const ToggleMenu = () => {
 </Link>
 
 
-<Link href='/categories/fitness'>
+<Link className={css.links} href='/categories/fitness'>
       <li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/Fitness.svg'}
          width={0}
@@ -181,7 +181,7 @@ const ToggleMenu = () => {
       </li>
       </Link>
 
-      <Link href='/categories/entertainment'>
+      <Link className={css.links} href='/categories/entertainment'>
       <li className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/Entertainment.svg'}
          width={0}
@@ -192,7 +192,7 @@ const ToggleMenu = () => {
       </li>
 </Link>
 
-<Link href='/categories/job&trainee'>
+<Link className={css.links} href='/categories/job&trainee'>
       <li  className={css.li2}  style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/Job&Trainee.svg'}
          width={0}
@@ -201,7 +201,7 @@ const ToggleMenu = () => {
       />
       <p className={css.alloffers}>Job&Trainee</p>
       </li></Link>
-      <Link href='/categories/news'>
+      <Link className={css.links}href='/categories/news'>
       <li className={css.li2} style={{display:'flex',alignItems:'center',fontFamily:'DM Sans, sans-serif'}}><Image
          src={'/home/News.svg'}
          width={0}
