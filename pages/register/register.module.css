@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
-
+.hesabiniz{
+  font-size:1vw;
+}
 .body{
     background:#EBDEE5;
     width:100%;
@@ -159,10 +161,7 @@
 }
 .eye{
     z-index:1;
-    position: absolute;
-    width:2vw;
-    height:2vw;
-    top:26vw;
+    
     left:63vw;
 }
 .daxilol{
@@ -172,8 +171,9 @@
     border-radius:5vw;
     font-size:1.1vw;
     height:2.5vw;
+    
     width:8vw;
-    margin-right:1vw;
+    margin-right:5vw;
     cursor: pointer;
 }
 .qeydiyyat{
@@ -223,14 +223,19 @@
     }
     .daxilol{
         font-size:2.5vw;
-        width:12vw;
-        height:3.5vw;
+        width:14vw;
+       margin-right:0vw;
+        height:4vw;
+        margin-bottom:1vw;
     }
     .daxiltxt{
         font-size:5vw;
     }
     .logintxt{
         font-size:2.5vw;
+    }
+    .hesabiniz{
+      font-size:2vw;
     }
     .qeydiyyat{
         font-size:2.5vw;
