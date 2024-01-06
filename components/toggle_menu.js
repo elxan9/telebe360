@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {chevron} from '../public/chevron.svg'
+import {chevroncol} from '../public/chevroncol.svg'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FaBars} from 'react-icons/fa';
 import Link from  'next/link';
@@ -102,6 +104,10 @@ const ToggleMenu = () => {
          height={0}
          className={css.logoImg}
       /></li></Link>
+            <div className={css.tabicons1}><Image src={'/settings.svg'} width={0} height={0} className={css.tabicon}/>
+      <Image src={'/contact.svg'} width={0} height={0} className={css.tabicon}/>
+     <Link href='/' ><Image src={'/logout.svg'} width={0} height={0} className={css.tabicon}/></Link>
+      </div>
         </ul>
       )}
       {isSecondListOpen && (
@@ -211,13 +217,20 @@ const ToggleMenu = () => {
       <p className={css.alloffers}>News</p>
       </li>
       </Link>
+      <div className={css.tabicons}><Image src={'/settings.svg'} width={0} height={0} className={css.tabicon}/>
+      <Image src={'/contact.svg'} width={0} height={0} className={css.tabicon}/>
+     <Link href='/' ><Image src={'/logout.svg'} width={0} height={0} className={css.tabicon}/></Link>
+      </div>
         </ul>
-      )}</div>
+      )}
+      
+      </div>
      <span className={css.btnspan}>
      <button onClick={toggleBoth} className={css.toggle_but}>
-     <FontAwesomeIcon  className={css.chevron} icon={isMenuOpen ? faChevronLeft : faChevronRight} /> <Image src={'/Burger.svg'} width={1} height={1} className={css.hamburger}/>
+     <FontAwesomeIcon   className={css.chevron} icon={isMenuOpen ? faChevronLeft : faChevronRight} style={{fontSize:'5vw'}} /> <Image src={'/Burger.svg'} width={1} height={1} className={css.hamburger}/>
       </button>
    </span>
+
     </div>
   );
 };
