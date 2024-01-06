@@ -6,7 +6,7 @@ export default function Navbar (){
     return(
         <nav className={css.navbar}>
             
-            <form onSubmit classNanme={css.form}>
+            <form onSubmit className={css.form}>
       <input className={css.search}
         type="text"
         placeholder="Search"
