@@ -276,6 +276,7 @@ font-weight: 900;
     }
     .list2{
         width:50vw;
+        text-decoration: none;
         height:100%;
         margin-top:15vw;
         border-top-right-radius: 10vw;
