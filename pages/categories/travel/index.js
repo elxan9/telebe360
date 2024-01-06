@@ -1,10 +1,10 @@
 import React from 'react';
-import css from './home.module.css'; 
-import ToggleMenu from '../../components/toggle_menu'
+import css from './css.module.css'; 
+import ToggleMenu from '../../../components/toggle_menu'
 import { useState } from 'react';
 import Image from 'next/image'
 import Head from 'next/head';
-import Navbar from '../../components/navbar'
+import Navbar from '../../../components/navbar'
 import Link from 'next/link';
 export default function Home (){
     return(
@@ -41,8 +41,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
+      <h3>Travel Card</h3>
+      <p>Travel adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>
@@ -53,8 +53,8 @@ export default function Home (){
       <div className={css.cardtop}><span style={{borderColor:'#FF8A00'}} className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/goldbook.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
+      <h3>Travel Card</h3>
+      <p>Travel adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span style={{color:'#FF8A00'}} className={css.percent}>20%</span>
@@ -65,8 +65,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
+      <h3>Travel Card</h3>
+      <p>Travel adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>
@@ -78,8 +78,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
+      <h3>Travel Card</h3>
+      <p>Travel adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>
@@ -91,8 +91,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
+      <h3>Travel Card</h3>
+      <p>Travel adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>
@@ -104,8 +104,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
+      <h3>Travel Card</h3>
+      <p>Travel adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>

@@ -1,108 +1,96 @@
+"use client"
 import React from 'react';
-import Head from 'next/head';
-import css from '../pages/before_login/login.module.css'; 
+import css from './login/login.module.css'; 
+import { FaEye, FaEyeSlash, FaKey } from 'react-icons/fa';
+import { useState } from 'react';
 import Image from 'next/image'
+import Head from 'next/head';
 import Link from 'next/link';
+export default function Login() {
+    const [passwordVisible, setPasswordVisible] = useState(false);
+  const [formData, setFormData] = useState({ email: '', password: '' });
 
-export default function BeforeLogin() {
-  const check_img = '/before_login_media/check.svg'
-  return (
-  <>
-   <style jsx global>{`
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Form gönderimi için burada yapılması gerekenler
+    console.log(formData); // Örnek olarak formData'yı konsola yazdırma
+  };
+
+    return (
+        <div className={css.body}>
+              <style jsx global>{`
             body {
               margin: 0;
               
             }
       `}</style>
-      <Head>
+<Head>
         <title>Tələbə360°-a daxil olun</title>
         <link rel="icon" href="/home/360minilogo.svg" />
       </Head>
-  <section className={css.section1 }>
-   
-      <div className={css.container}>
-    <nav className={css.loginNav}>
-    <Link href='/login'> <button className={css.loginLeftButton}>DAXİL OL</button></Link>
-      <Link href={'/register'}><button className={css.loginRightButton}>İNDİ QOŞUL</button></Link>
-    </nav>
-       <div className={css.section1div}>
-        <div className={css.logoDiv}>
-       <Image src={'/before_login_media/telebe360logo.svg'} 
-       width={0}
-       height={0} className={css.img}/></div>
-             </div>
-      <div className={css.section1P}>
-       <div className={css.section1pDiv}>
-         <p className={css.section1p1}>Making money is a skill</p>
-        <p className={css.section1p2}>We will <b>teach you</b> how to <b>master it</b></p></div>
-       <div className={css.videodiv}> <Image
-         src={'/before_login_media/videoframe.svg'}
+          <div className={css.logoDiv}>
+          <Image
+         src={'/before_login_media/telebe360logo.svg'}
          width={0}
          height={0}
-         className={css.videoimg}
-      /></div>
+         className={css.logoImg}
+      />
+          </div>
+          
+
+
+         <div className={css.loginForm}>
+          <form onSubmit={handleSubmit} className={css.loginFormDiv}>
+            <div style={{display:'flex',justifyContent:'center'}}><h2 className={css.daxiltxt}>Daxil olun</h2></div>
+      <div>
+        
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="E-mailiniz"
+          className={css.emailinput}
+        />
+      </div>
+      <div >
+         <FaKey className={css.keyicon}/>
+        <input
+          type={passwordVisible ? 'text' : 'password'}
+          id="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+          placeholder="Şifrəniz"
+          className={css.pass}
+        
+        />
+        <span  onClick={togglePasswordVisibility}>
+          {passwordVisible ? <FaEyeSlash className={css.eye} /> : <FaEye className={css.eye}  />}
+        </span>
+      </div>
+      <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:'2vw'}}>
+      <p   className={css.logintxt}><i>Şifrənizi unutmusunuz?</i></p>
+      <Link href='/home'><button className={css.daxilol} type="submit">Daxil ol</button></Link></div>
+      <div style={{display:'flex',alignItems:'center',marginTop:'10vw',marginLeft:'-8vw'}}>
+      <p  className={css.logintxt}><i>Hesabınız yoxdur?</i></p>
+     <Link href='/register'><button className={css.qeydiyyat} type="submit">Qeydiyyatdan keçin</button></Link></div>
       
-      </div>
-      <div className={css.sec1but}><button>Tələbə360°-a Qoşul</button></div>
-    </div>
-    </section>
-    <Image src={'/before_login_media/page_cross_line.svg'}
-     width={0}
-     height={0} className={css.cross_line}
-    />
-    <section className={css.section2}>
-      <div className={css.sec2imgdiv}>
-      <Image src={'/before_login_media/section2_logo.svg'}
-     width={0}
-     height={0} className={css.section2img}
-    />
-      </div>
-      <div className={css.section2pdiv}>
-      <Image src={'/before_login_media/section2_p.svg'}
-     width={0}
-     height={0} className={css.section2p}
-    />
-    <Image src={'/before_login_media/section2_orange_line.svg'}
-    width={0}
-    height={0} 
-    className={css.sec2_orange_line}
-    />
-      </div>
-      <div className={css.cloud_div}>
-      <Image src={'/before_login_media/360_cloud.svg'}
-     width={0}
-     height={0} className={css.cloudimg}
-    />
-      </div>
-      <div className={css.sec2_main_div}>
-       <div className={css.sec2_main_div_left}>
-       <Image src={'/before_login_media/section2_left_macbook.svg'}
-     width={0}
-     height={0} className={css.macbook}
-    />
-     <Image src={'/before_login_media/section2_left_ipad.svg'}
-     width={0}
-     height={0} className={css.ipad}
-    />
-       </div>
-       <div className={css.sec2line}></div>
-       <div className={css.sec2_main_div_right}>
-          <ul>
-            <li>  <span className={css.student_span}><Image src={'/before_login_media/telebe_icon.svg'} width={0} height={0} className={css.student}/></span>
-                 <h2>New App, New Lessons</h2>
-            </li>
-            <li>  <Image src={check_img} width={0} height={0} className={css.check}/>
-            <p>World-class custom built learning application</p></li>
-            <li>  <Image src={check_img} width={0} height={0} className={css.check}/>
-            <p>Scale from Zero to $10K/month as fast as possible</p></li>
-            <li>  <Image src={check_img} width={0} height={0} className={css.check}/>
-            <p>Master the skill you need to maximize your income</p>
-            </li>
-            
-          </ul>
-       </div>
-      </div>
-    </section>
-    </>
-  );
-}
+    </form>
+
+     </div>
+  
+
+        </div>
+        );
+    }
