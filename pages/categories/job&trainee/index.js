@@ -35,14 +35,24 @@ export default function Home (){
         className={css.banner}
         />
       </div>
+      <div>
+        <Image 
+        src={'/mobilebanner.svg'}
+        width={0}
+        height={0}
+        className={css.mobilebanner}
+        />
+      </div>
+      
+      
      <div className={css.card_div}>
       
      <div className={css.card}>
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Job&trainee Card</h3>
-      <p>Job&trainee adress</p></div>
+      <h3>Job&Trainee Card</h3>
+      <p>Job&Trainee adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>
@@ -53,8 +63,8 @@ export default function Home (){
       <div className={css.cardtop}><span style={{borderColor:'#FF8A00'}} className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/goldbook.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Job&trainee Card</h3>
-      <p>Job&trainee adress</p></div>
+      <h3>Job&Trainee Card</h3>
+      <p>Job&Trainee adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span style={{color:'#FF8A00'}} className={css.percent}>20%</span>
@@ -65,8 +75,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Job&trainee Card</h3>
-      <p>Job&trainee adress</p></div>
+      <h3>Job&Trainee Card</h3>
+      <p>Job&Trainee adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>
@@ -78,8 +88,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Job&trainee Card</h3>
-      <p>Job&trainee adress</p></div>
+      <h3>Job&Trainee Card</h3>
+      <p>Job&Trainee adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>
@@ -91,8 +101,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Job&trainee Card</h3>
-      <p>Job&trainee adress</p></div>
+      <h3>Job&Trainee Card</h3>
+      <p>Job&Trainee adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>
@@ -104,8 +114,8 @@ export default function Home (){
       <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
       <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
       <div className={css.card_p}>
-      <h3>Job&trainee Card</h3>
-      <p>Job&trainee adress</p></div>
+      <h3>Job&Trainee Card</h3>
+      <p>Job&Trainee adress</p></div>
       <div className={css.but_div}> <button className={css.woltbut}>Online</button>
       <button className={css.todaybut}>Today</button>
       <span className={css.percent}>20%</span>

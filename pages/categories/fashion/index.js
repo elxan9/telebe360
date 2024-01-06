@@ -35,6 +35,16 @@ export default function Home (){
         className={css.banner}
         />
       </div>
+      <div>
+        <Image 
+        src={'/mobilebanner.svg'}
+        width={0}
+        height={0}
+        className={css.mobilebanner}
+        />
+      </div>
+      
+      
      <div className={css.card_div}>
       
      <div className={css.card}>
