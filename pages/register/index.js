@@ -114,7 +114,7 @@ export default function Register() {
       </select>
      
       <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:'2vw'}}>
-      <p  style={{fontSize:'1vw'}}><i>Hesabınız var?</i></p>
+      <p className={css.hesabiniz}><i>Hesabınız var?</i></p>
      <Link href='/login'><button className={css.daxilol} type="submit">Daxil olun</button></Link></div>
     
     
