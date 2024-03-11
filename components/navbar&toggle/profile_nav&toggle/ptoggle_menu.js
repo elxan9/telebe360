@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {chevron} from '../../public/chevron.svg'
-import {chevroncol} from '../../public/chevroncol.svg'
+import {chevron} from '../../../public/chevron.svg'
+import {chevroncol} from '../../../public/chevroncol.svg'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FaBars} from 'react-icons/fa';
 import Link from  'next/link';
 
-import css from './navbar.module.css'
+import css from './pnavbar.module.css'
 const ToggleMenu = () => {
   const [isFirstListOpen, setIsFirstListOpen] = useState(true);
   const [isSecondListOpen, setIsSecondListOpen] = useState(false);
@@ -104,7 +104,7 @@ const ToggleMenu = () => {
          height={0}
          className={css.logoImg}
       /></li></Link>
-            <div className={css.tabicons1}><Link href='/settings'><Image src={'/settings.svg'} width={0} height={0} className={css.tabicon}/></Link>
+            <div className={css.tabicons1}><Image src={'/settings.svg'} width={0} height={0} className={css.tabicon}/>
       <Image src={'/contact.svg'} width={0} height={0} className={css.tabicon}/>
      <Link href='/' ><Image src={'/logout.svg'} width={0} height={0} className={css.tabicon}/></Link>
       </div>

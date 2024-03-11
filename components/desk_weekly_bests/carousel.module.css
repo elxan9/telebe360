@@ -49,24 +49,24 @@
 .card_text_div{
     display:flex;
     flex-direction: column;     font-family: 'DM Sans', sans-serif; 
-    align-items: left;margin-bottom:3.5vw;
+    align-items: left;margin-bottom:2vw;
     
 }
 .card_text_div h2{
     margin:0;
-    margin-left:1vw;
+    margin-left:1vw; font-family: 'DM Sans', sans-serif; 
     display:flex;
     font-size:1.5vw;
     align-items:start;
 }
 .card_text_div p{
    
-    margin:0;margin-left:1vw !important;
-    margin-top:0.2vw;
+    margin-left:1vw !important;
+    margin-top:0.2vw; font-family: 'DM Sans', sans-serif; 
     font-size:1vw;font-weight: 500;
     text-align:left;
-    display:flex;
-    align-items:start;
+    
+
 }
 .card_button_div{
     display:flex;

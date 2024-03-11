@@ -32,7 +32,7 @@ showThumbs={false}
 autoPlay={false}
 infiniteLoop={false}
 
-showArrows={true}
+showArrows={false}
 emulateTouch={true}
 swipeScrollTolerance={100}
 thumbWidth={100}
@@ -40,7 +40,7 @@ interval={5000}
 transitionTime={1500}
 showIndicators={false}
 centerMode={true}
-centerSlidePercentage={60}
+centerSlidePercentage={57}
 selectedItem={0}
 stopOnHover={false}
 dynamicHeight={false}
