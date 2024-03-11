@@ -61,7 +61,7 @@
 }
 .card_text_div p{
    
-    margin:0;margin-left:1vw;
+    margin:0;margin-left:1vw !important;
     margin-top:0.2vw;
     font-size:1vw;font-weight: 500;
     text-align:left;
