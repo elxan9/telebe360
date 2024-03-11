@@ -1,10 +1,16 @@
 import React from 'react';
 import css from './home.module.css'; 
-import ToggleMenu from '../../components/toggle_menu'
+import ToggleMenu from '../../components/navbar&toggle/toggle_menu'
 import { useState } from 'react';
 import Image from 'next/image'
+import Carousel from "../../components/desk_carousel/carousel"
+import MobileCarousel from '../../components/mobile_carousel/carousel'
 import Head from 'next/head';
-import Navbar from '../../components/navbar'
+import Navbar from '../../components/navbar&toggle/navbar'
+import MobileWeeklyBests from '../../components/mobile_weekly_bests_carousel/carousel'
+import DeskWeeklyBests from '../../components/desk_weekly_bests/carousel'
+import DeskAddCarousel2 from '../../components/desk_carousel_2/carousel'
+import MobAddCarousel2 from '../../components/mobile_carousel_2/carousel'
 import Link from 'next/link';
 export default function Home (){
     return(
@@ -27,110 +33,91 @@ export default function Home (){
      
      </div>
      <div className={css.main_container}>
-      <div>
-        <Image 
-        src={'/bannerad.svg'}
-        width={0}
-        height={0}
-        className={css.banner}
-        />
+      <div className={css.banner}>
+        <Carousel/>
       </div>
-      <div>
-        <Image 
-        src={'/mobilebanner.svg'}
-        width={0}
-        height={0}
-        className={css.mobilebanner}
-        />
+      <div className={css.mobilebanner}>
+        <MobileCarousel/>
       </div>
       
-      
-     <div className={css.card_div}>
-      
-     <div className={css.card}>
-      <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
-      <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
-      <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
-      <div className={css.but_div}> <button className={css.woltbut}>Online</button>
-      <button className={css.todaybut}>Today</button>
-      <span className={css.percent}>20%</span>
+      <div className={css.categories_div}>
+        <p>Kategoriyalar</p>
+       <ul className={css.categories_ul}>
+        <li className={css.categories_li}>
+          <div  className={css.category_li}>
+        <Image
+         src={'/home/Fashion.svg'}
+         width={0}
+         height={0}
+         className={css.category_div}
+      /></div>
+      <p className={css.category_p}> Fashion</p>
+        </li>
+        <li className={css.categories_li}>
+          <div  className={css.category_li}>
+        <Image
+         src={'/home/Food.svg'}
+         width={0}
+         height={0}
+         className={css.category_div}
+      /></div>
+      <p className={css.category_p}>Food</p>
+        </li>
+        <li className={css.categories_li}>
+          <div  className={css.category_li}>
+        <Image
+         src={'/home/Fitness.svg'}
+         width={0}
+         height={0}
+         className={css.category_div}
+      /></div>
+      <p className={css.category_p}>Fitness</p>
+        </li>
+        <li className={css.categories_li}>
+          <div  className={css.category_li}>
+        <Image
+         src={'/home/Technology.svg'}
+         width={0}
+         height={0}
+         className={css.category_div}
+      /></div>
+      <p className={css.category_p}>Technology</p>
+        </li>
+        <li className={css.categories_li}>
+          <div  className={css.category_li}>
+        <Image
+         src={'/home/Travel.svg'}
+         width={0}
+         height={0}
+         className={css.category_div}
+      /></div>
+      <p className={css.category_p}>Travel</p>
+        </li>
+        
+       </ul>
       </div>
-     </div>
-  
-     <div style={{border:'0.2vw solid  #FF8A00'}} className={css.card}>
-      <div className={css.cardtop}><span style={{borderColor:'#FF8A00'}} className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
-      <Image className={css.bookmarkcard} src={'/goldbook.svg'} width={100} height={100}/></div>
-      <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
-      <div className={css.but_div}> <button className={css.woltbut}>Online</button>
-      <button className={css.todaybut}>Today</button>
-      <span style={{color:'#FF8A00'}} className={css.percent}>20%</span>
+
+      <div className={css.mobweekbest}>
+        <p>Həftənin ən yaxşıları</p>
+        <MobileWeeklyBests/>  
       </div>
-     </div>
-     
-     <div className={css.card}>
-      <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
-      <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
-      <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
-      <div className={css.but_div}> <button className={css.woltbut}>Online</button>
-      <button className={css.todaybut}>Today</button>
-      <span className={css.percent}>20%</span>
+      <div className={css.deskweekbest}>
+        <p>Həftənin ən yaxşıları</p>
+        <DeskWeeklyBests/>  
       </div>
-     </div>
-
-
-     <div className={css.card}>
-      <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
-      <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
-      <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
-      <div className={css.but_div}> <button className={css.woltbut}>Online</button>
-      <button className={css.todaybut}>Today</button>
-      <span className={css.percent}>20%</span>
-      </div>
-     </div>
-
-
-     <div className={css.card}>
-      <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
-      <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
-      <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
-      <div className={css.but_div}> <button className={css.woltbut}>Online</button>
-      <button className={css.todaybut}>Today</button>
-      <span className={css.percent}>20%</span>
-      </div>
-     </div>
-
-
-     <div className={css.card}>
-      <div className={css.cardtop}><span className={css.ppdiv}><Image src={'/profile.jpg'} width={1000} height={1000} className={css.card_pp}/></span>
-      <Image className={css.bookmarkcard} src={'/home/bookmark.svg'} width={100} height={100}/></div>
-      <div className={css.card_p}>
-      <h3>Example Card</h3>
-      <p>Example adress</p></div>
-      <div className={css.but_div}> <button className={css.woltbut}>Online</button>
-      <button className={css.todaybut}>Today</button>
-      <span className={css.percent}>20%</span>
-      </div>
-     </div>
-    
-  
-     </div>
-     
+      <div className={css.add2desk}><DeskAddCarousel2/></div>
+      <div className={css.add2mob}><MobAddCarousel2/></div>
      </div>
   
      <Image src={'/home/Footer.svg'}
      width={1000}
      height={1000}
      className={css.footer}
+     />
+       <Image src={'/mobfooter.svg'}
+     width={0}
+     height={0}
+     className={css.mobfooter}
      />
      </>
     )
