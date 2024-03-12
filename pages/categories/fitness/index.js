@@ -1,10 +1,10 @@
 import React from 'react';
 import css from './css.module.css'; 
-import ToggleMenu from '../../../components/toggle_menu'
+import ToggleMenu from '../../../components/navbar&toggle/toggle_menu'
 import { useState } from 'react';
 import Image from 'next/image'
 import Head from 'next/head';
-import Navbar from '../../../components/navbar'
+import Navbar from '../../../components/navbar&toggle/navbar'
 import Link from 'next/link';
 export default function Home (){
     return(

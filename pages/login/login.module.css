@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
 
 .body{
-    background: #EBDEE5;
+    background-image: url('/loginback.svg');
+  background-size: cover;
+  background-position: center;
+
+  background-attachment: fixed;
     width:100%;
     height:55.7vw;
     background-size:cover;
@@ -22,15 +26,15 @@
 }
 .loginForm{
     display:flex;
-
+    font-family: 'DM Sans', sans-serif; 
     align-items: center;
     justify-content: center;
- 
+   
 }
 
 .loginFormDiv{
-    background: #f8f6f9b9;
-    padding:0 10vw 0;
+    background: #f8f6f9b9; border-radius:0.5vw;
+    padding:0 10vw 0;  font-family: 'DM Sans', sans-serif; 
 }
 
 .emailinput{
@@ -38,7 +42,7 @@
     height:2vw;
     border-radius:0.5vw;
     font-size:1.3vw;
-    padding:1vw;
+    padding:1vw;  font-family: 'DM Sans', sans-serif; 
     
     margin-top:3vw;
     border:transparent;
@@ -51,7 +55,7 @@
     border-radius:0.5vw;
     font-size:1.3vw;
     padding:1vw;
-    border:transparent;
+    border:transparent;  font-family: 'DM Sans', sans-serif; 
     margin-top:2vw;
     padding-left:4vw;
     position: relative;
@@ -77,7 +81,7 @@
 }
 
 .daxilol{
-    background:#9977F4;
+    background:#9977F4;text-decoration: none;
     color:white;
     border:transparent;
     border-radius:5vw;
@@ -110,6 +114,13 @@
       height:3.5vw;
       font-size:3vw;
     }
+    .body{
+        background-image: url('/mobilelogin.svg');
+        background-size: cover;
+        background-position: center;
+      
+        background-attachment: fixed;
+    }
     .logoImg{
         width:30vw;
         margin-top:4vw;
@@ -128,9 +139,13 @@
         left:73vw;top:44vw;
     }
     .daxilol{
-        font-size:2.5vw;
-        width:12vw;
+        font-size:2.2vw;
+        width:14vw;text-decoration: none;
         height:3.5vw;
+        padding:1vw;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
     .daxiltxt{
         font-size:5vw;
@@ -139,8 +154,8 @@
         font-size:2.5vw;
     }
     .qeydiyyat{
-        font-size:2.5vw;
-        width:20vw;
+        font-size:2.3vw;
+        width:100%;
         height:6vw;
     }
  }

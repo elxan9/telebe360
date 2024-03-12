@@ -21,8 +21,8 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form gönderimi için burada yapılması gerekenler
-    console.log(formData); // Örnek olarak formData'yı konsola yazdırma
+    
+    console.log(formData); 
   };
 
     return (
@@ -81,7 +81,7 @@ export default function Login() {
       </div>
       <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:'2vw'}}>
       <p   className={css.logintxt}><i>Şifrənizi unutmusunuz?</i></p>
-      <Link href='/home'><button className={css.daxilol} type="submit">Daxil ol</button></Link></div>
+      <Link passHref style={{textDecoration:"none"}} href='/home'><button className={css.daxilol} type="submit">Daxil ol</button></Link></div>
       <div style={{display:'flex',alignItems:'center',marginTop:'10vw',marginLeft:'-8vw'}}>
       <p  className={css.logintxt}><i>Hesabınız yoxdur?</i></p>
      <Link href='/register'><button className={css.qeydiyyat} type="submit">Qeydiyyatdan keçin</button></Link></div>
