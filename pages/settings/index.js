@@ -24,6 +24,7 @@ export default function Home (){
      <div><ToggleMenu/></div>
 
      <div><Navbar/></div>
+ 
         <div className={css.main}>
             <h3>Settings</h3>
            
@@ -122,7 +123,7 @@ export default function Home (){
         </div>
      
      </div>
-            
+     <p className={css.settingsmob}>DİZAYN YOXDUR BU LİNKƏ DAXİL OL: <a href='/settings/my360id'>link</a></p>   
      
 
      </>

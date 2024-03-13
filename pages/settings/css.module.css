@@ -2,7 +2,11 @@
 
 .main{
     font-family: 'DM Sans', sans-serif; 
-    margin-left:4vw;
+    margin-left:4vw;  display:none;
+}
+.body{
+    margin-top:3vw;
+  
 }
 .main>h3{
     font-size:8vw;
@@ -69,4 +73,21 @@ background:white;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     justify-content: center;position:relative;bottom:0vw;
     margin-left:-10vw;
     gap:2vw;
+}
+.settingsmob{
+    display:block;position:absolute;
+    margin-left:20vw;margin-top:20vw;
+}
+
+@media only screen and (max-width: 800px){
+    .body{
+      
+       
+    }
+    .main{
+        display:block
+    }
+    .settingsmob{
+        display:none;
+    }
 }

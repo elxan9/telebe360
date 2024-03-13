@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 export default function Navbar (){
     return(
+      <div className={css.mobile}>
         <nav className={css.navbar}>
            
             <form onSubmit className={css.form}>
@@ -52,6 +53,6 @@ export default function Navbar (){
         className={css.X}
       /></Link>
        
-        </nav>
+        </nav></div>
     )
 }
