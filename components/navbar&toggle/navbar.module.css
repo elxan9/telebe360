@@ -2,7 +2,7 @@
     display:flex;
     margin-top:2vw;
     align-items: center;
-    padding-bottom:2vw;
+    padding-bottom:0.5vw;margin-top:7vw;margin-left:0.8vw;
     gap:0.8vw;
   }
   .tabicons1{
@@ -32,9 +32,14 @@
     font-weight: 700;
 }
 .li2:hover .list2offer{
-    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    -webkit-filter: invert(100%);
     filter: invert(100%);
 }
+.li:hover .logoImg{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
 .li2:hover .alloffers{
     color:white;
 }
@@ -87,27 +92,28 @@
 
 .logoImg{
     width:2vw;
+
     height:3vw;
 }
 
 .first_ul{
-        list-style:none;
-        transition:1s;
-       
+        list-style:none;margin-top:0vw;
+        transition:1s; height:100%!;
+       display:flex;flex-direction: column; align-items: center;
         background:white;
      border:0.3vw solid white;
-        width:3vw;
-        padding-right:1vw;
+        width:5vw;
+       padding:0vw;
         border-top-right-radius: 1vw; border-bottom-right-radius: 1vw;
 }
 
 .togglediv{
    display:flex;
    transition:1s;
- margin-top:-1vw;
-   position:absolute;
+
+   position:fixed;
 z-index:1;
-   width:10vw;
+padding:0;
    transition:1s;
 
 }
@@ -143,10 +149,10 @@ z-index:1;
 }
 .list2{
     list-style:none;  background:white;
-    transition:1s;
- margin-left:-1vw;
+    transition:1s;height:100% !important;
+ margin-top:0vw;
  z-index:1;
-    width:12vw;
+    padding-left:1vw;
     border-top-right-radius: 1vw; border-bottom-right-radius: 1vw;
 }
 .list2img{
@@ -164,15 +170,16 @@ z-index:1;
 }
 .li{
     display:flex;
-     margin-top:1vw;
+     margin-top:0.3vw;
     align-items: center;
-    margin-left:-2vw;
+    padding-left:0.5vw;
+    padding-right:0.5vw;
     justify-content: center;
 }
 .li2{
     display:flex;
-    padding-left:1vw;margin-left:-1vw;
-    align-items: center;
+    padding-left:0.5vw;margin-top:0.1vw;
+    align-items: center;margin-right:2.5vw;
 }
 .li:hover{
     border-radius: 10px;
@@ -182,7 +189,7 @@ background: linear-gradient(180deg, #A763DD 0%, #F06BF2 100%);
 .li2:hover{
     border-radius: 10px;color:white;
     margin-right:1vw;cursor: pointer;
-    padding-left:1vw;
+    padding-left:0.5vw; padding-right:0.5vw;
 background: linear-gradient(180deg, #A763DD 0%, #F06BF2 100%);
 }
 .search{
@@ -219,7 +226,7 @@ background: linear-gradient(180deg, #A763DD 0%, #F06BF2 100%);
 }
 .img360{
     width:4vw;
-    height:4vw;margin-left:-2vw;
+    height:4vw;
 }
 .plus360text{
     background: linear-gradient(180deg, #FF8201 0%, #FFD600 100%);
@@ -236,13 +243,16 @@ font-weight: 900;
 }
 .chevron{
     color:#8F00FF ;
-    font-size:5vw;
+    font-size:2vw;
 }
 .hamburger{
     display:none;
     
 }
 @media only screen and (max-width: 800px) {
+    .togglediv{
+        position:absolute;height: 100% !important; 
+    }
     .first_ul{
         display:none;
     }
@@ -319,8 +329,8 @@ font-weight: 900;
         height:8vw;
         font-size:100vw;
           z-index:122;
-           margin-top:-27vw;
-           margin-left:-3vw;
+           margin-top:-29vw;
+           margin-left:-4vw;
         color:#8F00FF;  
     }
     .btnspan{
@@ -352,7 +362,7 @@ font-weight: 900;
     .list2{
         width:50vw;
         text-decoration: none;
-        height:240vh;
+        height:220vw !important;
         margin-top:20vw;
         border-top-right-radius: 10vw;
         border-bottom-right-radius:10vw; position:absolute;z-index:0;
@@ -361,7 +371,7 @@ font-weight: 900;
         width:120vw;
         background: rgba(255, 255, 255, 0.2); 
   backdrop-filter: blur(8px); 
-        height:350vh;
+        height:300% !important;
         position:absolute;z-index:11;
     }
     .alloffers{
