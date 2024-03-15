@@ -26,6 +26,7 @@
     display: flex;
     margin-left: 40vw;
     margin-top: 1.5vw;
+    margin-bottom:4vw;
 }
 
 .links {
@@ -175,7 +176,8 @@
 }
 
 .chevron {
-    font-size: 5vw;
+    width:1vw;
+    height:1vw;
 }
 
 .chevron3 {
@@ -201,7 +203,15 @@
 }
 
 .profmob {
-    display: none;
+   position:absolute; right:2vw; top:-1vw; display: flex; flex-direction: row; align-items: center;
+}
+.prof1{
+    display:flex;
+}
+.murad{
+    width:9vw;
+    height:9vw;
+    margin:0;padding:0;margin-right:-2vw;
 }
 
 .list2offer {
@@ -342,8 +352,10 @@
         position: absolute;
         height: 150% !important;
     }
-
-    .first_ul {
+  .murad{
+    display:none;
+  }
+.first_ul {
         display: none;
     }
 

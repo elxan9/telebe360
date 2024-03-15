@@ -231,7 +231,7 @@ const ToggleMenu = () => {
          </div>
          <span className={css.btnspan}>
             <button onClick={toggleBoth} className={css.toggle_but}>
-               <FontAwesomeIcon className={css.chevron} icon={isMenuOpen ? faChevronLeft : faChevronRight} style={{ fontSize: '5vw' }} /> 
+               <FontAwesomeIcon className={css.chevron} icon={isMenuOpen ? faChevronLeft : faChevronRight} /> 
               {isMenuOpen ? (
             <div className={css.chevrondiv}> <FontAwesomeIcon className={css.chevron3} icon={faChevronLeft} /></div>
              )

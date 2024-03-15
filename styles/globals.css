@@ -3,3 +3,12 @@
 *{
     font-family: 'DM Sans', sans-serif;
 }
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style:none;
+}

@@ -27,7 +27,7 @@ export default function Home (){
  
         <div className={css.main}>
             <h3>Settings</h3>
-           
+           <div className={css.mainul}>
       <ul className={css.proful}>
       <div className={css.profdiv}>
             <Image src={'pp.svg'}
@@ -45,14 +45,15 @@ export default function Home (){
       />
             </div>
            
-        <li className={css.profli}>
+       <li className={css.profli}>
         <Image src={'360idmob.svg'}
         width={0}
         height={0}
         className={css.id360mob}
       />
       <p>My 360ID</p>
-      <FaChevronRight className={css.chevron}/>
+      <Link href='/settings/my360id'> 
+      <FaChevronRight className={css.chevron}/></Link>
         </li>
         <li className={css.profli}>
         <Image src={'security.svg'}
@@ -61,7 +62,7 @@ export default function Home (){
         className={css.id360mob}
       />
       <p>Security</p>
-      <FaChevronRight className={css.chevron}/>
+      <Link href='/settings/security'><FaChevronRight className={css.chevron}/></Link>
         </li>
         <li className={css.profli}>
         <Image src={'membermob.svg'}
@@ -70,7 +71,7 @@ export default function Home (){
         className={css.id360mob}
       />
       <p style={{color:'#FFB800'}}>Membership</p>
-      <FaChevronRight style={{color:'#FFB800'}}className={css.chevron}/>
+     <Link href='/settings/membership'> <FaChevronRight style={{color:'#FFB800'}}className={css.chevron}/></Link>
         </li>
         <li className={css.profli}>
         <Image src={'profnoti.svg'}
@@ -79,7 +80,7 @@ export default function Home (){
         className={css.id360mob}
       />
       <p>Notifications</p>
-      <FaChevronRight className={css.chevron}/>
+      <Link href='/settings/notification'>  <FaChevronRight className={css.chevron}/></Link>
         </li>
         <li className={css.profli}>
         <Image src={'profreferences.svg'}
@@ -88,7 +89,7 @@ export default function Home (){
         className={css.id360mob}
       />
       <p>References</p>
-      <FaChevronRight className={css.chevron}/>
+      <Link href='/settings/references'> <FaChevronRight className={css.chevron}/></Link>
         </li>   
         <li className={css.profli}>
         <Image src={'proffeedback.svg'}
@@ -97,7 +98,7 @@ export default function Home (){
         className={css.id360mob}
       />
       <p>Feedback</p>
-      <FaChevronRight className={css.chevron}/>
+      <Link href='/settings/feedback'> <FaChevronRight className={css.chevron}/></Link>
         </li>   
       </ul>
       <ul className={css.proful2}>
@@ -108,7 +109,7 @@ export default function Home (){
         className={css.id360mob}
       />
       <p style={{color:'#0057FF'}}>Technical Support</p>
-      <FaChevronRight style={{color:"#0057FF"}}className={css.chevron}/>
+      <Link href='/settings/support'> <FaChevronRight style={{color:"#0057FF"}}className={css.chevron}/></Link>
         </li>  
         <li className={css.profli}>
         <Image src={'profrefere.svg'}
@@ -117,9 +118,9 @@ export default function Home (){
         className={css.id360mob}
       />
       <p style={{color:'#FF0000'}}>Refere a Friend</p>
-      <FaChevronRight style={{color:"#FF0000"}}className={css.chevron}/>
+      <Link href='/settings/refere'>  <FaChevronRight style={{color:"#FF0000"}}className={css.chevron}/></Link>
         </li>  
-      </ul>
+      </ul></div>
         </div>
      
      </div>

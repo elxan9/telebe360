@@ -47,7 +47,7 @@ export default function Navbar (){
         height={0}
         className={css.profmob}
       />
-      <Link href='/home'> <Image src={'X.svg'}
+      <Link href='/home'> <Image src={'/X.svg'}
         width={0}
         height={0}
         className={css.X}

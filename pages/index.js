@@ -21,8 +21,8 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form gönderimi için burada yapılması gerekenler
-    console.log(formData); // Örnek olarak formData'yı konsola yazdırma
+  
+    console.log(formData); 
   };
 
     return (

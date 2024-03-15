@@ -1,7 +1,7 @@
 import css from './navbar.module.css'
 import { BiSearch } from 'react-icons/bi';
 import Image from 'next/image';
-
+import ProfileDropdown from '../profile_dropdown/dropdown'
 export default function Navbar (){
     return(
         <nav className={css.navbar}>
@@ -46,16 +46,15 @@ export default function Navbar (){
          height={0}
          className={css.noti}
       />
-      <Image src={'/home/profile.svg'}
-        width={0}
-        height={0}
-        className={css.prof}
-      />
-        <Image src={'pp.svg'}
-        width={0}
-        height={0}
-        className={css.profmob}
-      />
+      
+    
+     <div className={css.profmob}>  <Image
+           src={'/murad.svg'}
+           width={0}
+           height={0}
+           className={css.murad}
+
+      />  <ProfileDropdown /></div>
        
         </nav>
     )

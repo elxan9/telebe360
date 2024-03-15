@@ -2,7 +2,7 @@
 
 .main{
     font-family: 'DM Sans', sans-serif; 
-    margin-left:4vw;  display:none;
+    margin-left:4vw;  display:none;position:relative;
 }
 .body{
     margin-top:3vw;
@@ -40,14 +40,18 @@
     height:8vw;right:2vw;
    
 }
+
 .proful{
     list-style: none;
     margin:0;   display:flex;flex-direction: column;
     align-items: center;margin-top:1vw;
     justify-content: center;
-    margin-left:-10vw;
+    width:100vw;
     gap:3vw;
    
+}
+.mainul{
+    position:absolute; right:0vw;
 }
 .profli{    
 width:90%; border-radius:2vw;
@@ -64,14 +68,14 @@ background:white;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .chevron{
    font-size:4vw;color:#8F00FF;
-    position:absolute;right:2vw;
+    position:absolute;right:2vw;top:3vw;
 }
 .proful2{
     list-style: none;
     margin:0;   display:flex;flex-direction: column;
     align-items: center;    margin-top:15vw;
     justify-content: center;position:relative;bottom:0vw;
-    margin-left:-10vw;
+      
     gap:2vw;
 }
 .settingsmob{
