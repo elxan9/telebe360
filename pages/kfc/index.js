@@ -54,8 +54,11 @@ polkovnik Harland Sanders tərəfindən əsası qoyulan bu restonalar şəbəkə
 toyuq əsaslı yeməklər, kartof püresi və lahana salatı kimi yan yeməklər təqdim edir və qırmızı
 və ağ rəngli brendi və "Barmaqlarınızı yalayın" şüarı ilə tanınır. Dünyada minlərlə filialları ilə
 KFC fast-food sahəsində görkəmli ad olaraq qalır.</p>
+                 <button className={css.getbutton}>əldə et</button>
                </div>
+       
       </div>
+      
     </>
   )
 }

@@ -56,7 +56,7 @@ export default function Home() {
               <Link className={css.ul_360id} href='/settings/references'><li >References</li></Link>
             </ul>
            
-           <h3> PAGE YOXDUR Dizayn ver Murad</h3>
+           <h3> Yaxın zamanda gələcək</h3>
           </div>
                < Dropdown className={css.dropdown}/>
         </div>

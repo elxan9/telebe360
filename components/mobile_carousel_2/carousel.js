@@ -12,7 +12,7 @@ export default function Slider(){
 <Carousel 
          renderArrowPrev={(onClickHandler, hasPrev, label) =>
             hasPrev && (
-                <button type="button" onClick={onClickHandler} title={label} style={{position:'absolute',top:'18vw',left:'5vw',zIndex:'0',background:'#dadada',border:'none',borderRadius:'50vw' ,width:'8vw',display:'flex',justifyContent:'center',alignItems:'center',height:'8vw',color:'white',fontSize:'5vw',}}>
+                <button type="button" onClick={onClickHandler} title={label} style={{position:'absolute',top:'18vw',left:'5vw',zIndex:'1',background:'#dadada',border:'none',borderRadius:'50vw' ,width:'8vw',display:'flex',justifyContent:'center',alignItems:'center',height:'8vw',color:'white',fontSize:'5vw',}}>
                     <FaChevronLeft/>
                 </button>
             )

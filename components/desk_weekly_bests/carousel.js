@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import {Carousel} from 'react-responsive-carousel';
 import { FaChevronRight,FaChevronLeft } from 'react-icons/fa';
 import css from './carousel.module.css'
-
+import Link from 'next/link'
 import Image from 'next/image';
 export default function Slider(){
     
@@ -51,9 +51,10 @@ className={css.carousel}
 >
 
  <div className={css.mobcardiv}>
+  <Link style={{color:'black'}}href='/kfc'>
    <div className={css.card_div}>
      <div className={css.card_pp}> 
-     <img src='https://logowik.com/content/uploads/images/349_lcwaikiki1.jpg'/>
+     <img src='https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png'/>
      </div>
      <Image
          src={'/home/bookmark.svg'}
@@ -63,8 +64,8 @@ className={css.carousel}
       />
       <div className={css.card_bottom}>
         <div className={css.card_text_div}>
-        <h2>Lc Waikiki</h2>
-        <p>Park Boulevard • Baku, Azerbaijan</p>
+        <h2>KFC</h2>
+        <p>Deniz Mall • Baku, Azerbaijan</p>
            </div>
            <div className={css.card_button_div}>
             <div>
@@ -75,6 +76,7 @@ className={css.carousel}
            </div>
       </div>
    </div>
+   </Link>
  </div>
 
  <div className={css.mobcardiv}>

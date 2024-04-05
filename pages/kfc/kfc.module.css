@@ -7,7 +7,13 @@
     margin-left: 11vw;
     width: 85vw;
 }
-
+.getbutton{
+    background:none;
+    border:2.5px solid black;
+    padding:0.3vw 2vw 0.3vw 2vw;
+    font-size:1.5vw;font-weight: 800;
+    border-radius:0.5vw;
+}
 .icon {
     width: 2vw;
     height: 2vw;
@@ -104,6 +110,13 @@
         height: 100vw;
         margin: 0;
 
+    }
+    .getbutton{
+        background:none;
+        border:2.5px solid black;
+        padding:0.3vw 2vw 0.3vw 2vw;
+        font-size:5.5vw;font-weight: 800;
+        border-radius:2vw;
     }
     .kfcbanner{
         overflow: hidden; border-radius:5vw;

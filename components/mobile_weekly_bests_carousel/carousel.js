@@ -90,7 +90,7 @@ className={css.carousel}
       <div className={css.card_bottom}>
         <div className={css.card_text_div}>
         <h2>Lc Waikiki</h2>
-        <p>Park Boulevard • Baku, Azerbaijan</p>
+        <p>Deniz Mall • Baku, Azerbaijan</p>
            </div>
            <div className={css.card_button_div}>
             <div>

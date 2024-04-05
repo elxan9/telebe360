@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { chevron } from '../../public/chevron.svg'
 import burger from '../../public/Burger.svg';
+import LogoutModal from '../logout_modal/modal'
+
 import { chevroncol } from '../../public/chevroncol.svg'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FaBars, FaChevronRight } from 'react-icons/fa';
@@ -107,7 +109,7 @@ const ToggleMenu = () => {
                      /></li></Link>
                   <div className={css.tabicons1}><Link legacyBehavior href='/settings/my360id'><Image src={'/settings.svg'} width={0} height={0} className={css.tabicon} /></Link>
                      <Image src={'/contact.svg'} width={0} height={0} className={css.tabicon} />
-                     <Link href='/' ><Image src={'/logout.svg'} width={0} height={0} className={css.tabicon} /></Link>
+                     <LogoutModal className={css.tabicon} id={css.logout}/>
                   </div>
                </ul>
             )}
@@ -223,7 +225,10 @@ const ToggleMenu = () => {
                      <div className={css.tabicons}><Link href='/settings' ><Image src={'/settings.svg'} width={0} height={0} className={css.tabicon} id={css.setli} /></Link>
                         <Link href='/settings/my360id' ><Image src={'/settings.svg'} width={0} height={0} className={css.tabicon} id={css.setli2} /></Link>
                         <Image src={'/contact.svg'} width={0} height={0} className={css.tabicon} />
-                        <Link href='/' ><Image src={'/logout.svg'} width={0} height={0} className={css.tabicon} /></Link>
+                     
+                           
+                            <LogoutModal className={css.tabicon}/>
+                         
                      </div></div>
                   </ul></div>
             )}

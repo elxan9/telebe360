@@ -2,6 +2,7 @@ import css from './navbar.module.css'
 import { BiSearch } from 'react-icons/bi';
 import Image from 'next/image';
 import ProfileDropdown from '../profile_dropdown/dropdown'
+import Feedback from '../feedback_modal/modal'
 export default function Navbar (){
     return(
         <nav className={css.navbar}>
@@ -20,8 +21,8 @@ export default function Navbar (){
  
       <button type="submit" className={css.search_but}> <BiSearch className={css.search_icon}/></button>
     </form>
-  
-<button className={css.feedback}>Feedback</button>
+  <Feedback>
+<button className={css.feedback}>Feedback </button></Feedback>
 <button className={css.favourites}> <Image
          src={'/home/bookmark.svg'}
          width={0}

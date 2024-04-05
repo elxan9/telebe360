@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import DashboardIcon from '@mui/icons-material/Dashboard'; // Burada bir örnek olarak Dashboard simgesini ekliyorum, kendi resminizi kullanmalısınız
+
 import css from './css.module.css'
 
 export default function BasicMenu() {

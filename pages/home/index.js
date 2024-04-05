@@ -11,6 +11,7 @@ import MobileWeeklyBests from '../../components/mobile_weekly_bests_carousel/car
 import DeskWeeklyBests from '../../components/desk_weekly_bests/carousel'
 import DeskAddCarousel2 from '../../components/desk_carousel_2/carousel'
 import MobAddCarousel2 from '../../components/mobile_carousel_2/carousel'
+import Footer from '../../components/footer/index'
 import Link from 'next/link';
 export default function Home (){
     return(
@@ -108,17 +109,8 @@ export default function Home (){
       <div className={css.add2desk}><DeskAddCarousel2/></div>
       <div className={css.add2mob}><MobAddCarousel2/></div>
      </div>
+  <Footer/>
   
-     <Image src={'/home/Footer.svg'}
-     width={1000}
-     height={1000}
-     className={css.footer}
-     />
-       <Image src={'/mobfooter.svg'}
-     width={0}
-     height={0}
-     className={css.mobfooter}
-     />
      </>
     )
 }
